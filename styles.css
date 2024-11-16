@@ -1,0 +1,102 @@
+/* styles.css */
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #8e44ad, #3498db);
+  color: #fff;
+}
+
+.game-container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.cell:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+.cell.x {
+  color: #e74c3c;
+}
+
+.cell.o {
+  color: #2ecc71;
+}
+
+.game-status {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #27ae60;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #2ecc71;
+}
+
+#winner-message {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+/* Additions for symbol selection */
+#selection-screen {
+  margin-top: 20px;
+}
+
+#selection-screen button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  background: #f39c12;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#selection-screen button:hover {
+  background: #e67e22;
+}
+
+.hidden {
+  display: none;
+}
+
